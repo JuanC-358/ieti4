@@ -1,23 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
-
+import { TextField } from '@mui/material';
+import Button from '@mui/material/Button';
+//<img src={logo} className="App-logo" alt="logo" />
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          React & MUI login 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
       </header>
+      <body className="App-body">
+        <TextField label="Email" margin="normal"></TextField>
+        <TextField label="Password" margin="normal"></TextField>
+        <Button variant="outlined">Login</Button>
+      </body>
     </div>
   );
 }
